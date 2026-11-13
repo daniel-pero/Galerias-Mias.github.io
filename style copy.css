@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ESTILOS GENERALES */
+body {
+    font-family: Arial, sans-serif;
+    background: #af8a8a;
+    color: #080303;
+    text-align: center;
+}
+
+/* MENU LATERAL */
+.menu-lateral {
+    background-color: #af8a8a60;
+    width: 220px;
+    padding: 20px;
+    border-radius: 8px;
+    height: fit-content;
+}
+
+.menu-lateral h2 {
+    margin-bottom: 20px;
+}
+
+.menu-lateral a {
+    display: block;
+    text-decoration: none;
+    color: #080505;
+    padding: 12px;
+    border-bottom: 1px solid #07040455;
+}
+
+.menu-lateral a:hover {
+    background-color: #92715e;
+}
+
+/* CONTENIDO */
+.contenido {
+    padding: 20px;
+}
+
+.contenido h2 {
+    margin-bottom: 20px;
+}
+.img {
+  width: 10px;
+  height: auto;
+  max-width: none;
+}
+
+/* CARRUSEL DE IMAGENES */
+.carrusel-container {
+    width: 1230%;
+    max-width: 700px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.carrusel {
+    display: flex;
+    width: 600%;
+    animation: vuelta 18s infinite;
+}
+
+.carrusel-item {
+    width: calc(100% / 6);
+    height: 480px;
+    flex: 0 0 calc(100% / 6);
+    object-fit: cover;
+}
+
+/* INFORMACION DE LOS GATOS */
+.informacion-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 10px auto;
+    overflow: hidden;
+    background-color: #af8a8a60;
+    border-radius: 8px;
+}
+
+.informacion {
+    display: flex;
+    width: 600%;
+    animation: vuelta 18s infinite;
+}
+
+.informacion-item {
+    width: calc(100% / 6);
+    flex: 0 0 calc(100% / 6);
+    min-width: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.informacion-item h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.informacion-item p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* ANIMACION */
+@keyframes vuelta {
+    0%, 15% {
+        transform: translateX(0);
+    }
+
+    20%, 35% {
+        transform: translateX(-16.6667%);
+    }
+
+    40%, 55% {
+        transform: translateX(-33.3333%);
+    }
+
+    60%, 75% {
+        transform: translateX(-50%);
+    }
+
+    80%, 95% {
+        transform: translateX(-66.6667%);
+    }
+
+    100% {
+        transform: translateX(-83.3333%);
+    }
+}
